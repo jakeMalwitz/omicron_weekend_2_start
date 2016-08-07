@@ -1,0 +1,19 @@
+
+.indexBar {
+  margin: 50px 0 50px 0;
+}
+.current {
+  display: inline;
+  padding: 5px;
+}
+
+.current {
+  border: 2px solid black;
+  color: white;
+}
+
+.tracker {
+  background-color: blue;
+  border: 2px solid gray;
+  color: blue;
+}
