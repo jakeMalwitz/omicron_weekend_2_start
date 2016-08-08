@@ -12,7 +12,7 @@ $(document).ready(function(){
           var i = 0;
           appendDom();
           tracker();
-          setInterval(timer, 10000);
+          var stopper = setInterval(timer, 10000);
 
           //Function that tracks the currently displayed comment.
           function tracker() {
@@ -64,18 +64,17 @@ $(document).ready(function(){
            emptyDom();
            appendDom();
            tracker();
-           //reset();
+           reset();
           });//Next Button
 
 
 
          //Reset Timer Function
-         /*
          function reset(){
            clearTimeout(stopper);
-           setInterval(timer, 10000);
+           stopper = setInterval(timer, 10000);
          }
-         */
+
         //FIX TIMER FUNCTION
         function timer() {
          i++;
